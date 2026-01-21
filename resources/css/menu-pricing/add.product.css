@@ -1,0 +1,249 @@
+body{
+    overflow: hidden;
+    background-image: url(/public/photos/DashboardBG.jpg);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-container{
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 20%;
+    gap: 1rem;
+}
+.dashboard-logoDiningCenter{
+    width: 100%;
+}
+.nav-general h1{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 3.4rem;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.navigation-ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;
+}
+.navigation-ul a:hover,
+.navigation button:hover{
+    cursor: pointer;
+}
+.navigation button:hover{
+    background-color: rgba(234, 232, 232, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: rgb(189, 81, 81);
+}
+.navigation-ul li:hover{
+    transform: translateX(1px);
+    animation: slide 0.3s ease-in-out forwards;
+}
+.navigation-ul li{
+    padding: 0.4rem;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    transition: all 0.3s ease;
+    font-size: 1.4rem;    
+}
+.navigation-ul a{
+    color: white;
+    text-decoration: none;
+}
+.navigation button{
+    font-size: 1.3rem;
+    color: rgb(152, 64, 64);
+    font-weight: bold;
+    border-radius: 14rem;
+    width: 50%;
+    border: none;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.menu-pricing-navigation{
+    background-color: rgba(44, 44, 44, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);}
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(3px);
+    }
+} 
+.parent-container{
+    display: flex;
+    gap: 5rem;
+}
+.add-product-container {
+    border-radius: 0.6rem;
+    top: 10%;
+    position: absolute;
+    left: 40%;
+    z-index: 10;
+    width: 28%;
+    height: 80%;
+    border-radius: 0.8rem;
+    display: flex;
+    background-color: rgb(241, 241, 241);
+    flex-direction: column;
+}
+.h1-container{
+    border-radius: 0.6rem;
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+    background-color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form div:not(.product-category-segment-inputs){
+    display: flex;
+    flex-direction: column;
+}
+.product-category-segment-inputs{
+    padding: 0.2rem;
+    display: flex;
+    background-color: rgb(230, 230, 230);
+}
+.product-category-segment-inputs input[type="radio"] {
+    display: none;
+}
+.product-category-segment-inputs input[type="radio"]:checked + label {
+    background-color:   #fafdff;
+    color: rgb(40, 117, 218);
+    border-color: #007bff;
+}
+.product-category-segment-inputs label{
+    border-radius: 0.2rem;
+}
+       
+.product-category-segment-inputs label:hover{
+    cursor: pointer;
+}
+.product-name-div,
+.product-quantity-div,
+.product-category-segment,
+.product-price-div{
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+}
+.product-category-segment{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    overflow: hidden;
+    width: 15rem;
+}
+.product-name-div input{
+    border: 2px solid black;
+}
+.product-name-div label,
+.product-quantity-div label,
+.product-price-div label,
+.product-category-segment-h1 span{
+    font-size: 1.2rem;
+}
+.product-category-segment label{
+    flex: 1;
+    padding: 0.1rem;
+}
+input{
+    border-radius: 0.2rem;
+    border: none;
+    padding: 0.2rem;
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+}
+.product-category-segment input:checked + label{
+    color: white;
+    font-weight: bold;
+}
+.error-message {
+    color: #e53935;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    display: block;
+}
+
+.input-error {
+    border: 1px solid #e53935;
+    background-color: #fff5f5;
+}
+.add-product-buttons-container{
+    border-radius: 0.6rem;
+    gap: 2rem;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    background-color: white;
+    height: 3.1rem;
+    display: flex;
+    flex-direction: row !important;
+}
+.image-uploader{
+    max-width: 15rem;
+    margin: 0 auto;
+}
+.upload-area {
+    position: relative;
+    border: 2px dashed #d0d0d0;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 0;
+}
+.cancel-button{
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 4rem;
+    max-width: 6rem;
+    min-width: 6rem;
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    font-size: 1.2rem;
+}
+#submit-button{
+    font-size: 1.2rem;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 4rem;
+    max-width: 6rem;
+    min-width: 6rem;
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    width: 100%;
+}
+.cancel-button:hover,
+#submit-button:hover{
+    cursor: pointer;
+}

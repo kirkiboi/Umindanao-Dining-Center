@@ -1,0 +1,95 @@
+/*
+NAVIGATION BAR NGA DESIGN SA UBOS (UNTIL LINE 96)
+*/
+ body{
+    overflow: hidden;
+    background-image: url(/public/photos/DashboardBG.jpg);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-container{
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 20%;
+    gap: 1rem;
+}
+.dashboard-logoDiningCenter{
+    width: 100%;
+}
+.nav-general h1{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 3.4rem;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.navigation-ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;
+}
+.navigation-ul a:hover,
+.navigation button:hover{
+    cursor: pointer;
+}
+.navigation button:hover{
+    background-color: rgba(234, 232, 232, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: rgb(189, 81, 81);
+}
+.navigation-ul li:hover{
+    transform: translateX(1px);
+    animation: slide 0.3s ease-in-out forwards;
+}
+.navigation-ul li{
+    padding: 0.4rem;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    transition: all 0.3s ease;
+    font-size: 1.4rem;    
+}
+.navigation-ul a{
+    color: white;
+    text-decoration: none;
+}
+.navigation button{
+    font-size: 1.3rem;
+    color: rgb(152, 64, 64);
+    font-weight: bold;
+    border-radius: 14rem;
+    width: 50%;
+    border: none;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu-pricing-navigation{
+    background-color: rgba(44, 44, 44, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(3px);
+    }
+} 

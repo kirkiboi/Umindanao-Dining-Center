@@ -1,0 +1,216 @@
+body{
+    overflow: hidden;
+    background-image: url(/public/photos/DashboardBG.jpg);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-container{
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 20%;
+    gap: 1rem;
+}
+.dashboard-logoDiningCenter{
+    width: 100%;
+}
+.nav-general h1{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 3.4rem;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.navigation-ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;
+}
+.navigation-ul a:hover,
+.navigation button:hover{
+    cursor: pointer;
+}
+.navigation button:hover{
+    background-color: rgba(234, 232, 232, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: rgb(189, 81, 81);
+}
+.navigation-ul li:hover{
+    transform: translateX(1px);
+    animation: slide 0.3s ease-in-out forwards;
+}
+.navigation-ul li{
+    padding: 0.4rem;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    transition: all 0.3s ease;
+    font-size: 1.4rem;    
+}
+.navigation-ul a{
+    color: white;
+    text-decoration: none;
+}
+.navigation button{
+    font-size: 1.3rem;
+    color: rgb(152, 64, 64);
+    font-weight: bold;
+    border-radius: 14rem;
+    width: 50%;
+    border: none;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.menu-pricing-navigation{
+    background-color: rgba(44, 44, 44, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(3px);
+    }
+} 
+.parent-container{
+    display: flex;
+    gap: 5rem;
+    align-items: flex-start;
+    width: 100%;
+}
+.table-header-container{
+    max-width: 60rem;
+    min-width: 60rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.table-header-sub-container{
+    padding: 1rem;
+}
+.header-controls{
+    display: flex;
+    gap: 10rem;
+}
+.header-all-button{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    gap: 0px;
+}
+#filter-options{
+    display: none;
+    position: absolute;
+    border-radius: 0.4rem;
+    right: 4rem;
+    background: white;
+    border: 1px solid #ccc; 
+    padding: 0.7rem;
+}
+.header-search-box{
+    border-left: 1px solid grey;
+    padding-left: 0.5rem;
+}
+.filter-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+.search-input{
+    padding: 0.2rem;
+    width: 15rem;
+    border: none;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.header-buttons{
+    display: flex;
+    gap: 1.5rem;
+}
+.header-add-item-button,
+.logs-button{
+    color: white;
+    background: rgba(34, 100, 229, 1);
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 1.5rem;
+}
+.fa-plus{
+    font-size: 0.7rem;
+    padding-right: 0.4rem;
+}
+.header-add-item-button:hover,
+.page-btn:hover,
+svg:hover{
+    cursor: pointer;
+}
+.header-left-controls{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.table-container{    
+    background-color: white;
+    width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th{
+    padding: 1rem 2rem;
+    border-bottom: 1px solid black;
+}
+.tr{
+    border-bottom: 1px solid black;
+}
+td.actions {
+    display: flex;
+    position: relative;
+    gap: 0.4rem;
+    border-bottom: none;
+    text-align: center;
+    justify-content: center;
+}
+.fa-pencil{
+    font-size: 0.9rem;
+}
+.pagination-controls,
+.page-buttons{
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.product-name-and-image img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
