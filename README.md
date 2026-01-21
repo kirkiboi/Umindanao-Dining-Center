@@ -57,3 +57,41 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Laravel University Dining Center
+
+## Requirements
+- PHP 8.x
+- Composer
+- MySQL
+- Node.js (optional)
+
+## Setup Instructions
+
+1. Clone the repository
+```bash
+git clone https://github.com/kirkiboi/Umindanao-Dining-Center.git
+```
+
+2. Install dependencies
+```bash
+composer install
+```
+
+3. Create environment file
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+4. Configure database in `.env`
+
+5. Run migrations
+```bash
+php artisan migrate
+```
+
+6. Start the server
+```bash
+php artisan serve
+```
